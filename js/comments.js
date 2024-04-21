@@ -22,6 +22,8 @@ postCommentForm.addEventListener('submit', function(event) {
     postCommentForm.reset(); // Reset the form by its actual ID
 });
 
+
+
 function updateComments() {
     commentsRef.on('value', (snapshot) => {
         commentList.innerHTML = ''; // Clear comments list
