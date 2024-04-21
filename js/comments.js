@@ -1,4 +1,4 @@
-import { database } from '/js/init.js';
+import { database } from './init.js';
 
 const pageID = document.getElementById("recipeName").innerText; // Use innerText for text content
 const commentsRef = database.ref("recipes/" + pageID);
