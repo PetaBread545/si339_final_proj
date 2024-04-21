@@ -53,7 +53,7 @@ function updateComments() {
                 commentListAdd(comment);
             });
         } else {
-            document.querySelector(".commentPlaceholder").innerHTML = '<p> Be the first to leave a comment! </p>';
+            document.querySelector("#commentPlaceholder").innerHTML = '<p> Be the first to leave a comment! </p>';
         }
     });
 }
