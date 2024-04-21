@@ -75,6 +75,7 @@ function commentListAdd(comment) {
     commentDate.innerText = new Date(comment.time).toLocaleString('en-US', {year: 'numeric',  month: 'long', day: 'numeric',  hour: '2-digit',  minute: '2-digit'}); 
     rating.innerText = comment.rating;
     thisComment.appendChild(commentUser);
+    thisComment.appendChild(rating);
     thisComment.appendChild(commentDate);
     thisComment.appendChild(commentText);
     commentList.appendChild(thisComment);
