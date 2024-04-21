@@ -29,11 +29,12 @@ postCommentForm.addEventListener('submit', function(event) {
     const commentorName = document.getElementById("user").value;
     const rating = document.getElementById("rating").value;
 
-    commentsRef.push().set({
+    let newCommentRef = push(commentsRef);
+
+    set(newCommentRef, {
         text: commentText,
         username: commentorName,
-        // Use Firebase server time if possible
-        time: (new Date()).toISOString(),
+        time: new Date().toISOString(),
         rating: rating
     });
 
