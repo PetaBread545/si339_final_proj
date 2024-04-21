@@ -168,6 +168,7 @@ textarea{
     border: 2px solid #1c1c21;
     border-radius: 1vh;
     padding: 1vh 1vw;
+    margin: 1vh 1vw;
 }
 
 .username{
