@@ -72,7 +72,7 @@ function commentListAdd(comment) {
     // Assuming the property is "username" based on how it's set
     commentUser.innerText = comment.username; // Use innerText instead of innerHTML when setting text content
     commentText.innerText = comment.text;
-    commentDate.innerText = comment.time.toLocaleString('en-US', {weekday: 'long', year: 'numeric',  month: 'long',    day: 'numeric',  hour: '2-digit',  minute: '2-digit', second: '2-digit', timeZoneName: 'short' }); 
+    commentDate.innerText = new Date(comment.time).toLocaleString('en-US', {weekday: 'long', year: 'numeric',  month: 'long',    day: 'numeric',  hour: '2-digit',  minute: '2-digit', second: '2-digit', timeZoneName: 'short' }); 
     rating.innerText = comment.rating;
     thisComment.appendChild(commentUser);
     thisComment.appendChild(commentDate);
