@@ -167,15 +167,19 @@ textarea{
     flex-direction: column;
     border: 2px solid #1c1c21;
     border-radius: 2vh;
+    padding: 1vh 1vw;
 }
 
 .username{
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-align:left;
 }
 
 .date{
-    font-size: 1vh;
+    font-size: 1.5vh;
     font-style: italic;
 }
 
+.commentText{
+    font-size:1.25vh;
+}
