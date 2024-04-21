@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const database = getDatabase();
+const database = getDatabase(app, 'https://si339final-default-rtdb.firebaseio.com');
 
 
 const pageID = document.getElementById("recipeName").innerText; // Use innerText for text content
