@@ -19,7 +19,7 @@ const database = getDatabase();
 
 
 const pageID = document.getElementById("recipeName").innerText; // Use innerText for text content
-const commentsRef = database.ref("recipes/" + pageID);
+const commentsRef = ref(database, "recipes/" + pageID);
 const commentList = document.getElementById("comments-container");
 const postCommentForm = document.getElementById("postComment");
 
