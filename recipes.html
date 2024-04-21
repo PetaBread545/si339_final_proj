@@ -57,22 +57,22 @@
             </ol>
             <h2>Rate this Recipe</h2>
             <hr>
-        
+            <form id="postComment">
+                <label for="rating">Rating (1-5):</label>
+                <select name="rating" id="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <textarea id="user" placeholder="Enter Username!" name="username" required></textarea>
+                <textarea id="comment" placeholder="Comment on this recipe!" name="comment" rows="4" cols="50" required></textarea>
+                <button type="submit">Submit!</button>
+            </form>
             <ul id="comments-container"></ul>
-                <form id="postComment">
-                    <label for="rating">Rating (1-5):</label>
-                    <select name="rating" id="rating" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <br>
-                    <textarea id="user" placeholder="Enter Username!" name="username" required></textarea>
-                    <textarea id="comment" placeholder="Comment on this recipe!" name="comment" rows="4" cols="50" required></textarea>
-                    <button type="submit">Submit!</button>
-                </form>
+               
 
 
     </main>
