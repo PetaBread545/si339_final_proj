@@ -43,7 +43,7 @@ postCommentForm.addEventListener('submit', function(event) {
 
 
 function updateComments() {
-    commentsRef.on('value', (snapshot) => {
+    onValue(commentsRef, (snapshot) => {
         commentList.innerHTML = ''; // Clear comments list
         const val = snapshot.val();
         // Check if comments exist
