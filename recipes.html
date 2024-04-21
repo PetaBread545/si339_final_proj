@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Name</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.11.00/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.00/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+      <div id="headerBar">
+        <h1 id="recipeName">recipe</h1>
+        <button id="menu">&#9776;</button>
+      </div>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contents.html">Table of Contents</a></li>
+                <li><a href="recipes.html">Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="recipeContent">
+            <h2>Description</h2>
+            <hr>
+
+            <p class="recipeDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h2>Ingredients</h2>
+            <hr>
+
+            <ul>
+              <li>~ ingredient ~</li>
+              <li>~ ingredient ~</li>
+              <li>~ ingredient ~</li>
+              <li>~ ingredient ~</li>
+              <li>~ ingredient ~</li>
+              <li>~ ingredient ~</li>
+                <!-- List ingredients here -->
+            </ul>
+            <h2>Instructions</h2>
+            <hr>
+
+
+            <ol>
+                <!-- List steps here -->
+                <li>~ instruction ~</li>
+                <li>~ instruction ~</li>
+                <li>~ instruction ~</li>
+                <li>~ instruction ~</li>
+                <li>~ instruction ~</li>
+            </ol>
+            <h2>Rate this Recipe</h2>
+            <hr>
+        
+            <ul id="comments-container">
+                <form name="postComment">
+                    <label for="rating">Rating (1-5):</label>
+                    <select name="rating" id="rating" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <textarea id="user" placeholder="Enter Username!" name="username" required></textarea>
+                    <textarea id="comment" placeholder="Comment on this recipe!" name="comment" rows="4" cols="50" required></textarea>
+                    <button type="submit">Submit!</button>
+                </form>
+
+            </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Cookbook</p>
+    </footer>
+    <script type="module">
+        import { initializeApp } from '/node_modules/firebase/app';
+        import { getFirestore, collection, getDocs } from '/node_modules/firebase/firestore/lite';
+        const firebaseConfig = {
+            apiKey: "AIzaSyAidhG9aOtiR1GPmcicMKC2uzFOI5SvSQ0",
+            authDomain: "si339final.firebaseapp.com",
+            projectId: "si339final",
+            storageBucket: "si339final.appspot.com",
+            messagingSenderId: "871224604451",
+            appId: "1:871224604451:web:3077444f5cccbcfcd3be96",
+            measurementId: "G-SXWP24X75P"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+    </script>
+    <script src="comments.js"></script>
+    <script src="js/nav.js"></script>
+    
+</body>
+</html>
