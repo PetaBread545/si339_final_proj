@@ -60,22 +60,26 @@ function updateComments() {
 
 function commentListAdd(comment) {
     var thisComment = document.createElement('div');
+    var userAndRating = document.createElement('div');
     var commentUser = document.createElement('h3');
     var commentDate = document.createElement('h4');
     var rating = document.createElement('h4');
     var commentText = document.createElement('p');
+    
     thisComment.classList.add("commentEntry");
     commentUser.classList.add("username");
     commentDate.classList.add("date");
     rating.classList.add("ratingNum");
-    commentText.classList.add("commentText")
+    commentText.classList.add("commentText");
+    userAndRating.classList.add("commentHeader");
     // Assuming the property is "username" based on how it's set
     commentUser.innerText = comment.username; // Use innerText instead of innerHTML when setting text content
     commentText.innerText = comment.text;
     commentDate.innerText = new Date(comment.time).toLocaleString('en-US', {year: 'numeric',  month: 'long', day: 'numeric',  hour: '2-digit',  minute: '2-digit'}); 
-    rating.innerText = comment.rating;
-    thisComment.appendChild(commentUser);
-    thisComment.appendChild(rating);
+    rating.innerText = "Rating: " + comment.rating;
+    userAndRating.appendChild(commentUser);
+    userAndRating.appendChild(rating);
+    thisComment.appendChild(userAndRating);
     thisComment.appendChild(commentDate);
     thisComment.appendChild(commentText);
     commentList.appendChild(thisComment);
