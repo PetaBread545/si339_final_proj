@@ -159,10 +159,6 @@ figcaption{
     border-radius: 3vh;
 }
 
-#postComment{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-}
 
 textarea{
     background-color: #EADCD7;
@@ -297,6 +293,6 @@ textarea{
 
     #postComment{
         width: 75%;
-        
+
     }
 }
