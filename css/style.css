@@ -188,3 +188,48 @@ textarea{
     font-size:1.25vh;
     padding: 0.25vh 1vw;
 }
+
+#ratingSlider{
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    border: 1px solid #1c1c21;
+    margin-bottom: 1vh;
+    outline: none;
+    background: #D0BEB4;
+}
+
+/* For WebKit browsers */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background: #584237; /* Your thumb color */
+      border-radius: 50%;
+      width: 20px; /* Your thumb size */
+      height: 20px; /* Your thumb size */
+      cursor: pointer;
+    }
+  }
+  
+  /* For Firefox */
+  @media screen and (min--moz-device-pixel-ratio:0) {
+    input[type='range']::-moz-range-thumb {
+      background: #D0BEB4; /* Your thumb color */
+      border-radius: 50%;
+      width: 20px; /* Your thumb size */
+      height: 20px; /* Your thumb size */
+      cursor: pointer;
+    }
+  }
+  
+  /* For Internet Explorer */
+  @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+    input[type='range']::-ms-thumb {
+      background: #D0BEB4; /* Your thumb color */
+      border-radius: 50%;
+      width: 20px; /* Your thumb size */
+      height: 20px; /* Your thumb size */
+      cursor: pointer;
+    }
+  }

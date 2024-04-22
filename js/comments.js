@@ -82,3 +82,21 @@ function commentListAdd(comment) {
 }
 
 updateComments(); // Call the function to start loading the comments
+
+
+
+
+const ratingSlider = document.getElementById('ratingSlider');
+  const ratingOutput = document.getElementById('ratingOutput');
+  
+  // Function to update output with slider value
+  function updateRatingOutput() {
+    // Fix the value to 2 decimal places
+    ratingOutput.value = parseFloat(ratingSlider.value).toFixed(2);
+  }
+
+  // Update output when the slider value is changed
+  ratingSlider.addEventListener('input', updateRatingOutput);
+
+  // Initialize the output display
+  updateRatingOutput();
