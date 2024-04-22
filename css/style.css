@@ -150,7 +150,7 @@ figcaption{
 #comments-container{
     margin-top:2vh;
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     background-color: #F8F3F2;
     padding: 1vh 1vw;
     border:3px solid aliceblue;
