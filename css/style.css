@@ -209,7 +209,35 @@ textarea{
 }
 
 .notes{
-    list-style-type: disc;
+    margin:1vh 1vh;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.notes > li{
+    margin:1vh 0.2vh;
+}
+
+.instructionList{
+    text-align: left;
+    list-style-type:decimal;
+    list-style-position: inside;
+
+}
+
+.instructionList > li{
+    margin:1vh 0.2vh;
+    text-indent: -2vw;
+}
+
+.ingredientList{
+    margin:1vh 1vh;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.ingredientList>li{
+    margin: 0.75vh 0.2vw;
 }
 
 /* For WebKit browsers */
