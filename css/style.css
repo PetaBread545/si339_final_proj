@@ -81,7 +81,7 @@ h2{
 }
 
 footer{
-    position: static;
+    position: fixed;
     bottom:0px;
     background-color: #1c1c21;
     color:#e4bb97;
@@ -92,9 +92,6 @@ footer{
     width: 100vw;
 }
 
-.footerHome{
-    position:absolute;
-}
 
 
 /* Content Page */
