@@ -111,7 +111,9 @@ footer{
     max-width: 90%;
     border-radius: 3vw;
     margin-top:1.5vh;
-    
+    max-height: 15vh;
+    object-fit: cover;
+    max-height: 20vh;
 }
 
 figure{
