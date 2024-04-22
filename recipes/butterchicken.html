@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's College Cookbook: Pico de Gallo</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.11.00/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.00/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database-compat.js"></script>
+</head>
+<body>
+    <header>
+      <div id="headerBar">
+        <h1 id="recipeName">Pico de Gallo</h1>
+        <button id="menu">&#9776;</button>
+      </div>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../contents.html">Table of Contents</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="recipeContent">
+            <h2>Description</h2>
+            <hr>
+
+            <p class="recipeDescription">Pico de gallo is one of my favorite sides/toppings to make. Its fresh, versatile, simple, and delicious. I like to eat mine with tortilla chips or use it as a topping when I make burrito bowls, tacos, nachos, etc. It only requires 6 ingredients and is super cheap to make.</p>
+            <h2>Ingredients</h2>
+            <hr>
+
+            <ul class="ingredientList">
+              <li>3 Serrano (spicy) or 3 Jalapeno Peppers (less spicy)</li>
+              <li>1 lime</li>
+              <li>4 large roma tomatoes</li>
+              <li>2 tablespoons of salt</li>
+              <li>Bushel of cilantro</li>
+              <li>1/2 large red onion</li>
+                <!-- List ingredients here -->
+            </ul>
+            <h2>Instructions</h2>
+            <hr>
+            <ul class="ingredientList">
+                <!-- List steps here -->
+                <li>Start by dicing your tomatoes into little cubes and gather them into a bowl. Size is preference but I like them about 3 millimeters in size.</li>
+                <li>Next, dice the 3 peppers of choice into cubes of the same size, adding it to the same bowl. It might be a little tricky since their shape is not the same, but just get them to be around the same size.</li>
+                <li>The onion is up next, dicing to the same size as the other two vegetables and adding them to the bowl.</li>
+                <li>Chop up some cilantro to add to the bowl, I like to use the leaves of 3-4 branches as the stems can be bitter.</li>
+                <li>Squeeze one lime's worth of juice over it all.</li>
+                <li>Add your 2 tablespoons of salt and mix thoroughly.</li>
+                <li>Let settle in the fridge for at least 20 minutes.</li>
+            </ul>
+            <h2>Tips and Notes</h2>
+            <hr>
+            <ul class="notes">
+                <li>Some people prefer only the flesh of their tomatoes, which you can do by carving out the seeds and innards of your tomatoes before you dice them.</li>
+                <li>White onions are also an option if you're not a big fan of them but I feel like the flavor and smell of red onion is perfect for pico.</li>
+                <li>Although it won't technically be pico anymore, you can add some canned corn at the end to give little pops of sweetness in your pico.</li>
+                <li>When you eat it, try to get the pieces that have been soaking the in water at the bottom, as those would have absorbed the most lime and salt.</li>
+            </ul>
+
+            <h2>Rate this Recipe</h2>
+            <hr>
+            <form id="postComment">
+                <label for="rating">Rating (0-5):</label>
+                <input type="range" id="ratingSlider" name="rating" min="0" max="5" value="3" step="0.01" required>
+                <output id="ratingOutput" for="rating">3.00</output>
+                <br>
+                <textarea id="user" placeholder="Enter Username!" name="username" maxlength="18" required></textarea>
+                <textarea id="comment" placeholder="Comment on this recipe!" name="comment" rows="4" cols="50" required></textarea>
+                <button type="submit">Submit!</button>
+            </form>
+            <ul id="comments-container"></ul>
+               
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 My Cookbook</p>
+    </footer>
+    <!-- <script type="module" src="js/init.js"></script> -->
+    <script type="module" src="../js/comments.js"></script>
+    <script src="../js/nav.js"></script>
+    
+</body>
+</html>

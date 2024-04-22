@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's College Cookbook: Homemade Taco Beef</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.11.00/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.00/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database-compat.js"></script>
+</head>
+<body>
+    <header>
+      <div id="headerBar">
+        <h1 id="recipeName">Homemade Taco Beef</h1>
+        <button id="menu">&#9776;</button>
+      </div>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../contents.html">Table of Contents</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="recipeContent">
+            <h2>Description</h2>
+            <hr>
+
+            <p class="recipeDescription">Who doesn't like a fresh taco, topped with sour cream, pico de gallo, cheese, and more. Fortunately, taco beef is super easy to make at home. I like to make this in decently large batches, like 1-2 pounds of beef at a time, at keep it in the fridge to heat up and make a fresh taco whenever I want!</p>
+            <h2>Ingredients</h2>
+            <hr>
+
+            <ul class="ingredientList">
+              <li>1 pound 80/20 ground beef</li>
+              <li>1 teaspoon oregano</li>
+              <li>1 teaspoon cumin</li>
+              <li>1 teaspoon paprika</li>
+              <li>1 teaspoon chili powder</li>
+              <li>1/2 teaspoon salt</li>
+              <li>1 teaspoon tomato paste</li>
+              <li>1 teaspoon onion powder</li>
+              <li>2 teaspoon garlic powder</li>
+              <li>2 teaspoon cooking oil</li>
+                <!-- List ingredients here -->
+            </ul>
+            <h2>Instructions</h2>
+            <hr>
+            <ul class="ingredientList">
+                <!-- List steps here -->
+                <li>Heat up some oil on medium-low heat in a decently sized pan (enough to fit all the beef comfortably).</li>
+                <li>Once hot, add your ground beef. Make sure to break up the meat and mix it frequently.</li>
+                <li>While your meat is cooking, add all of the dry ingredients into a bowl and combine evenly.</li>
+                <li>Once the beef is mostly browned, get rid of the extra oil from the bottom of the pan.</li>
+                <li>Add the tomato paste and about half of the dry spices to the beef. After mixing a little, add the second half.</li>
+                <li>Cook until beef is done and residual water is mostly gone.</li>
+            </ul>
+            <h2>Tips and Notes</h2>
+            <hr>
+            <ul class="notes">
+                <li>Getting the excess oil and fat out can be tricky. I like to use a disposable cup and a spoon. Tilt the pan to the side so the liquids accumulate at the side of the pan, and spoon it into the disposable cup. Then, you can put the cup in the fridge and throw it out in the trash when it hardens.</li>
+                <li>This meat is super versatile. When I'm reheating it, I like to add some rice and cheese to nake a more complete profile. You can put this in tacos and burritos, eat it with rice, eat it with chips, etc.</li>
+            </ul>
+
+            <h2>Rate this Recipe</h2>
+            <hr>
+            <form id="postComment">
+                <label for="rating">Rating (0-5):</label>
+                <input type="range" id="ratingSlider" name="rating" min="0" max="5" value="3" step="0.01" required>
+                <output id="ratingOutput" for="rating">3.00</output>
+                <br>
+                <textarea id="user" placeholder="Enter Username!" name="username" maxlength="18" required></textarea>
+                <textarea id="comment" placeholder="Comment on this recipe!" name="comment" rows="4" cols="50" required></textarea>
+                <button type="submit">Submit!</button>
+            </form>
+            <ul id="comments-container"></ul>
+               
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 My Cookbook</p>
+    </footer>
+    <!-- <script type="module" src="js/init.js"></script> -->
+    <script type="module" src="../js/comments.js"></script>
+    <script src="../js/nav.js"></script>
+    
+</body>
+</html>
