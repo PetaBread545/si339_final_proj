@@ -52,8 +52,6 @@ function updateComments() {
             Object.values(val).forEach(comment => {
                 commentListAdd(comment);
             });
-        } else {
-            commentList.innerHTML = '<p> Be the first to leave a comment! </p>';
         }
     });
 }
