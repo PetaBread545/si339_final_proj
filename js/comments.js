@@ -27,7 +27,7 @@ postCommentForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const commentText = document.getElementById("comment").value;
     const commentorName = document.getElementById("user").value;
-    const rating = document.getElementById("rating").value;
+    const rating = document.getElementById("ratingSlider").value;
 
     let newCommentRef = push(commentsRef);
 
