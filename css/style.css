@@ -108,12 +108,12 @@ footer{
 
 
 .thumbnail{
-    max-width: 90%;
+    width: 90%;
     border-radius: 3vw;
     margin-top:1.5vh;
     max-height: 15vh;
     object-fit: cover;
-    max-height: 90%;
+    height: 90%;
 }
 
 figure{
@@ -134,7 +134,7 @@ figcaption{
 #contentGrid{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 28vh 28vh 28vh 28vh;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
 }
 
  
