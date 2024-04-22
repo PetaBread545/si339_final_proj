@@ -81,7 +81,7 @@ h2{
 }
 
 footer{
-    position: relative;
+    position: static;
     bottom:0px;
     background-color: #1c1c21;
     color:#e4bb97;
