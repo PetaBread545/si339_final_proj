@@ -66,12 +66,13 @@
             <h2>Rate this Recipe</h2>
             <hr>
             <form id="postComment">
-                <label for="rating">Rating (0-5):</label>
-                <input type="range" id="ratingSlider" name="rating" min="0" max="5" value="3" step="0.01" required>
+                <label for="rating">Rating (0-5):<input type="range" id="ratingSlider" name="rating" min="0" max="5" value="3" step="0.01" required></label>
+                
                 <output id="ratingOutput" for="rating">3.00</output>
                 <br>
                 <textarea id="user" placeholder="Enter Username!" name="username" maxlength="18" required></textarea>
                 <textarea id="comment" placeholder="Comment on this recipe!" name="comment" rows="4" cols="50" required></textarea>
+                <br>
                 <button type="submit" id="submitButton">Submit!</button>
             </form>
             <ul id="comments-container"></ul>

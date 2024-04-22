@@ -141,7 +141,7 @@ figcaption{
 
 #comment{
     margin-top:2vh;
-    width: 75%
+    width: 70%
     
 }
 
@@ -153,6 +153,11 @@ figcaption{
     padding: 1vh 1vw;
     border:3px solid aliceblue;
     border-radius: 3vh;
+}
+
+#postComment{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 textarea{
@@ -167,6 +172,7 @@ textarea{
     border-radius: 1vh;
     padding: 1vh 1vw;
     margin: 1vh 1vw;
+
 }
 
 .username{
@@ -216,17 +222,6 @@ textarea{
     margin:1vh 0.2vh;
 }
 
-.instructionList{
-    text-align: left;
-    list-style-type:decimal;
-    list-style-position: inside;
-
-}
-
-.instructionList > li{
-    margin:1vh 0.2vh;
-    text-indent: -2vw;
-}
 
 .ingredientList{
     margin:1vh 1vh;
