@@ -24,6 +24,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 a{
@@ -81,7 +82,7 @@ h2{
 }
 
 footer{
-    position: fixed;
+    position: relative;
     bottom:0px;
     background-color: #1c1c21;
     color:#e4bb97;
@@ -237,6 +238,18 @@ textarea{
     margin: 0.75vh 0.2vw;
 }
 
+#submitButton{
+    border-radius: 2vh;
+    width:100%;
+    background-color: #D0BEB4;
+    color: #584237;
+    text-align: center;
+    padding: 0.5vh 1vw;
+    margin: 1vh auto 1vh auto; 
+    font-weight: bold;
+    border:2px solid #1c1c21;
+}
+
 /* For WebKit browsers */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range']::-webkit-slider-thumb {
@@ -271,3 +284,9 @@ textarea{
       cursor: pointer;
     }
   }
+
+
+@media screen and (max-width: 768px){
+
+
+}
