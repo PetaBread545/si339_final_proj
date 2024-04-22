@@ -113,7 +113,7 @@ footer{
     margin-top:1.5vh;
     max-height: 15vh;
     object-fit: cover;
-    max-height: 20vh;
+    max-height: 90%;
 }
 
 figure{
@@ -134,6 +134,7 @@ figcaption{
 #contentGrid{
     display:grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
 }
 
  
