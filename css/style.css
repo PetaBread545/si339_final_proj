@@ -38,13 +38,11 @@ a{
 }
 
 
-a:hover{
-    font-style: italic;
-}
-a:focus{
+a:focus, a:hover{
     font-style: italic;
     border: 2px solid #F4EDEA;
     border-radius: 3px;
+    font-weight: bold;
 }
 
 h1{
