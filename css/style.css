@@ -251,6 +251,12 @@ textarea{
     border:2px solid #1c1c21;
 }
 
+
+.bigText{
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+}
 .photos{
     display:grid;
     grid-template-columns: 1fr 1fr;
