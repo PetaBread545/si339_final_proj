@@ -7,7 +7,18 @@
     background-color: #1c1c21;
     display:none;
 }
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    overflow: hidden;
+  }
 
+.skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
 main{
     min-height: 100vh;
 }
@@ -40,8 +51,6 @@ a{
 
 a:focus, a:hover{
     font-style: italic;
-    border: 2px solid #F4EDEA;
-    border-radius: 3px;
     font-weight: bold;
 }
 
