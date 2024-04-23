@@ -28,6 +28,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    margin-bottom: 0px;
 }
 
 a{
@@ -114,7 +115,6 @@ footer{
     width: 90%;
     border-radius: 3vw;
     margin-top:1.5vh;
-    max-height: 15vh;
     object-fit: cover;
     height: 90%;
 }
@@ -285,9 +285,6 @@ textarea{
 
 
 @media screen and (min-width: 768px){
-    body{
-        margin-bottom: 20vh;
-    }
     #contentGrid{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -295,11 +292,23 @@ textarea{
     }
 
     .nav_bar{
-        width: 25vw;
+        width: 25vh;
     }
 
     #comment, #user{
         padding: 0.5vh 0.5vw;
     }
     
+}
+
+@media screen and (min-width: 1280px){
+    #comment{
+        border-radius:2vh;
+    }
+
+    .recipeContent, .tableOfContents{
+        width: 70vw;
+        margin:auto;
+        margin-top: 1vh;
+    }
 }
